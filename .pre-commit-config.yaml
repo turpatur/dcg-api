@@ -1,0 +1,21 @@
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.2
+    hooks:
+      - id: gitleaks
+
+  - repo: https://github.com/semgrep/semgrep
+    rev: v1.65.0
+    hooks:
+      - id: semgrep
+        args: ['--config=auto', '--error']
+
+  - repo: https://github.com/securego/gosec
+    rev: v2.19.0
+    hooks:
+      - id: gosec
+
+  - repo: https://github.com/golangci/golangci-lint
+    rev: v1.56.2
+    hooks:
+      - id: golangci-lint
